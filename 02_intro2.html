@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 What Can JavaScript Do?</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      width: 100%;
+      max-width: 320px;
+      display: block;
+      margin-bottom: .4rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>What Can JavaScript Do?</h2>
+  <p>JavaScript can change HTML attributes values.</p>
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+  <img id="img" src="/resources/girl-1.jpg" alt="girl">
+  <button type="button" onclick="prev()">&larr; Prev</button>
+  <button type="button" onclick="next()">Next &rarr;</button>
+
+  <script>
+
+    const image = document.getElementById("img");
+
+    function next() {
+      console.log("onclick: next()");
+      image.src = "/resources/girl-2.jpg";
+    }
+
+    function prev() {
+      console.log("onclick: prev()");
+      image.src = "/resources/girl-1.jpg";
+    }
+
+  </script>
+</body>
+
+</html>

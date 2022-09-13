@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 What Can JavaScript Do?</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    button {
+      margin-bottom: .4rem;
+      margin-right: .2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>What Can JavaScript Do?</h2>
+  <p>JavaScript can hide and show HTML elements.</p>
+  <button type="button" onclick="show()">Show</button>
+  <button type="button" onclick="hide()">Hide</button>
+  <img id="img" src="/resources/ghost.jpg" alt="ghost">
+
+  <!-- JS code -->
+  <script>
+
+    const element = document.getElementById("img");
+
+    function show() {
+      console.log("onclick: show()");
+      element.style.display = "block";
+    }
+
+    function hide() {
+      console.log("onclick: hide()");
+      element.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
