@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Data Types</title>
+  <style>
+    .title {
+      background-color: turquoise;
+    }
+
+    .example {
+      background-color: #111111;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .example code {
+      display: block;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .var {
+      color: mediumpurple;
+    }
+
+    .number {
+      color: darksalmon;
+    }
+
+    .string {
+      color: lightgreen;
+    }
+
+    .boolean,
+    .method {
+      color: lightpink;
+    }
+
+    .comment {
+      color: gray;
+    }
+
+    .mb-32 {
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Data Types |<br> <code class="title">The concept of Data Types</code>:</h2>
+
+  <p>
+    In programming, data types is an important concept. To be able to operate on variables, it is important to know
+    something about the data type.
+  </p>
+  <p>
+    JavaScript has dynamic types. This means that the same variable can be used to hold different data
+    types.
+  </p>
+
+  <p><b><em>Example:</em></b></p>
+
+  <div class="example">
+    <code>
+      <span class="var">let</span> foo = <span class="number">42</span>; <span class="comment">//foo contains a number</span>
+    </code>
+    <code>
+      foo = <span class="string">"bar"</span>; <span class="comment">//now foo contains a string</span>
+    </code>
+    <code>
+      foo = <span class="boolean">true</span>; <span class="comment">//and now foo contains a boolean</span>
+    </code>
+  </div>
+
+  <p>
+    JavaScript also has weak typing. This means that in certain cases it allows implicit type conversion. This in other
+    programming languages would throw an error.
+  </p>
+
+  <p><b><em>Example:</em></b></p>
+
+  <div class="example">
+    <code>
+      <span class="var">const</span> foo = <span class="number">42</span>; <span class="comment">//foo is a number</span>
+    </code>
+    <code>
+      <span class="var">const</span> result = foo + <span class="string">"1"</span>; <span class="comment">// JavaScript coerces foo to a string, so it can be concatenated with the other operand</span>
+    </code>
+    <code>
+      console.log(result); <span class="comment">// 421</span>
+    </code>
+  </div>
+
+  <div class="mb-32"></div>
+
+</body>
+
+</html>
