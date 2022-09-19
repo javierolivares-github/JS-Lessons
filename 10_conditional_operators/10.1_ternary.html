@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Conditional Operators - Ternary</title>
+  <style>
+    code {
+      background-color: turquoise;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Conditional Operators | <code>ternary operator(?)</code>:</h2>
+  <p>
+    The ternary operator accepts three values: a condition, an expression to execute if the condition is true, and an
+    expression to execute if the condition is false.
+  </p>
+
+  <p><b><em>Example:</em></b></p>
+
+  <p>Please verify your age:</p>
+  <input type="number" name="age" id="age" value="17">
+  <button onclick="verifyAge()">Submit</button>
+  <p id="output"></p>
+
+  <script>
+
+    function verifyAge() {
+      let age = document.getElementById("age").value;
+      let verify = (age >= 18) ? "You are allowed" : "You are not allowed";
+      document.getElementById("output").innerHTML =
+        `${verify} to view the content of this page.`;
+    }
+
+  </script>
+</body>
+
+</html>

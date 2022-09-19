@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Bitwise Operators - NOT(~)</title>
+  <style>
+    code {
+      background-color: turquoise;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Bitwise Operators |<br> <code>NOT(~)</code>:</h2>
+  <p>The bitwise NOT inverts the bits of its operand. Like other bitwise operators, it converts the operand to a 32-bit
+    signed integer.</p>
+  <p><b><em>Example:</em></b></p>
+  <div id="output"></div>
+
+  <script>
+
+    /* 
+    Converting the integer to a 32-bit binary 
+    number with binaryconvert.com */
+    const a = 5; // 00000000 00000000 00000000 00000101
+    const b = -3; // 11111111 11111111 11111111 11111101
+
+    document.getElementById("output").innerHTML =
+      (~a) + "<br>" +
+      (~b);
+
+  </script>
+</body>
+
+</html>

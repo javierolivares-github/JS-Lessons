@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Bitwise Operators - XOR(^)</title>
+  <style>
+    code {
+      background-color: turquoise;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Bitwise Operators |<br> <code>XOR(^)</code>:</h2>
+  <p>The bitwise OR is performed on a pair of bits, and it returns 1 if the bits are different.</p>
+  <p><b><em>Example:</em></b></p>
+  <div id="output"></div>
+
+  <script>
+
+    /* 
+    Converting the integer to a 32-bit binary 
+    number with binaryconvert.com */
+    const a = 5; // 00000000 00000000 00000000 00000101
+    const b = 3; // 00000000 00000000 00000000 00000011
+
+    document.getElementById("output").innerHTML = (a ^ b);
+    // 00000000 00000000 00000000 00000110
+
+  </script>
+</body>
+
+</html>
