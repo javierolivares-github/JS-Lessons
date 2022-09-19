@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS Comments</title>
+  <title>JS String Operators - Concatenate</title>
   <style>
     code {
       background-color: turquoise;
@@ -15,15 +15,16 @@
 
 <body style="font-family: Arial, Helvetica, sans-serif;">
 
-  <h2>JS Comments:</h2>
+  <h2>JS String Operators | <code>Concatenate</code>:</h2>
+  <div id="output"></div>
 
   <script>
 
-    //This is a single line comment.
-
-    /*
-    This is a multi-line comment
-    */
+    // String operators - Concatenate
+    let text1 = "Jane";
+    let text2 = "Doe";
+    let text3 = text1 + " " + text2;
+    document.getElementById("output").innerHTML = text3;
 
   </script>
 </body>
