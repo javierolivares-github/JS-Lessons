@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Data Types - Strings and quotes</title>
+  <style>
+    code {
+      background-color: turquoise;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Data Types |<br> <code>Strings & quotes</code>:</h2>
+  <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+  <p><b><em>Example:</em></b></p>
+  <div id="output"></div>
+
+  <script>
+
+    let book1 = "Dune - by 'Frank Herbert'";
+    let book2 = 'Dune - by "Frank Herbert"';
+
+    document.getElementById("output").innerHTML =
+      book1 + "<br>" +
+      book2;
+
+    // Don't worry. There is a whole chapter about strings, their properties and methods. See you in the next video. 
+
+  </script>
+</body>
+
+</html>

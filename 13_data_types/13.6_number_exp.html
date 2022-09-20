@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Data Types - Numbers</title>
+  <style>
+    code {
+      background-color: turquoise;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Data Types |<br> <code>Numbers & exponentials</code>:</h2>
+  <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+  <p><b><em>Example:</em></b></p>
+  <div id="output"></div>
+
+  <script>
+
+    let distToMars = 58e6;
+    let atomSize = 1e-8;
+
+    document.getElementById("output").innerHTML =
+      `
+      Distance to Mars: ${distToMars} km. <br>
+      Atom Size: ${atomSize} cm.
+    `;
+
+
+  </script>
+</body>
+
+</html>
