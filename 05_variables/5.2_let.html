@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Variables - let</title>
+</head>
+
+<body>
+
+  <h2>JS Variables - <code>The let keyword</code>:</h2>
+  <ul>
+    <li>Variables are container for storing data.</li>
+    <li>You can create variables using the <code>var</code>, <code>let</code> or <code>const</code> keywords.</li>
+    <li>Variables defined with the <code>let</code> keyword can't be Redeclared, it have a Block Scope, and it can be
+      Reassigned.</li>
+  </ul>
+  <p class="eg">Example:</p>
+
+  <script>
+    // Variables defined with the let keyword:
+
+    // Cannot be Redeclared.
+    let user = "Jane Doe";
+    // let user = "Mark Red"; // SyntaxError
+    console.log(user);
+
+
+
+    // It has Block Scope.
+    {
+      let email = "janedoe@gmail.com";
+      // 'email' can be used here
+      console.log(email);
+    }
+
+    // 'email' cannot be used here
+    // console.log(email); // ReferenceError
+
+
+
+    // Can be Reassigned
+    let PI = 3.141592653;
+    PI = 3.14;
+    console.log(PI);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Variables - var</title>
+</head>
+
+<body>
+  <h2>JS Variables - <code>the var keyword</code>:</h2>
+  <ul>
+    <li>Variables are container for storing data.</li>
+    <li>You can create variables using the <code>var</code>, <code>let</code> or <code>const</code> keywords.</li>
+    <li>Variables defined with the <code>var</code> keyword can be Redeclared, it has a Global Scope, and can be
+      Reassigned.</li>
+  </ul>
+  <p class="eg">Example:</p>
+
+  <script>
+    // Variables defined with the var keyword:
+
+    // Can be Redeclared.
+    var user = "Jane Doe";
+    var user = "Mark Red";
+    console.log(user);
+
+
+
+    // It has Global Scope.
+    {
+      var email = "janedoe@gmail.com";
+      // 'email' can be used here
+      console.log(email);
+    }
+
+    // 'email' can also be used here
+    console.log(email);
+
+
+
+    // Can be Reassigned
+    var PI = 3.141592653;
+    PI = 3.14;
+    console.log(PI);
+
+  </script>
+</body>
+
+</html>

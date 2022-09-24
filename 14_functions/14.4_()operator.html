@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Functions - ( ) operator)</title>
+</head>
+
+<body>
+
+  <h2>JS Functions |<br> <code>( ) operator</code>:</h2>
+  <p>
+    Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.
+  </p>
+  <p>Accessing a function without () will return the function object instead of the function result.</p>
+
+  <!-- Example -->
+  <p><b><em>Example:</em></b></p>
+  <p>
+    Accessing a function without () will return the function definition instead of the function result:
+  </p>
+  <div id="output"></div>
+
+  <script>
+    // Output
+    document.getElementById("output").innerHTML =
+      `
+      <h3>Temperature Conversion: Fahrenheit to Celsius</h3>
+      <small>${toCelsius}</small> <br>
+    `;
+
+    // Function
+    function toCelsius(f) {
+      return ((5 / 9) * (f - 32)).toFixed(1);
+    }
+
+  </script>
+</body>
+
+</html>

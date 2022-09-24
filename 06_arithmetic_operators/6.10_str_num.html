@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Arithmetic Operators - addition (string & numbers)</title>
+</head>
+
+<body>
+
+  <h2>JS Arithmetic Operators | <br><code>Addition (Strings & Numbers)</code>:</h2>
+
+  <table>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Addition</td>
+    </tr>
+  </table>
+
+  <ul>
+    <li>Add two numbers, will return the sum.</li>
+    <li>Adding a number and a string will return a string.</li>
+  </ul>
+
+  <p class="eg">Example:</p>
+
+  <div id="output"></div>
+
+  <script>
+
+    // Addition
+    let a = 1 + 1; // number
+    let b = "1" + 1; // string
+    let c = "Hello" + 1 + 1; // string
+    let d = 1 + 1 + "Hello"; // string
+
+    document.getElementById("output").innerHTML =
+      `
+      a = ${a} <br>
+      b = ${b} <br>
+      c = ${c} <br>
+      d = ${d}
+    `;
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Functions - Concept</title>
+  <style>
+    code {
+      background-color: turquoise;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>JS Functions |<br> <code>Concept</code>:</h2>
+  <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+  <p>To create a JavaScript function, we use the "function" keyword, followed by a name, followed by parentheses () and
+    followed by curly brackets {}:</p>
+
+  <div class="example">
+    <span class="function">function</span> <span class="function_name">name</span> <span
+      class="yellow">(</span>parameter1, parameter2<span class="yellow">)</span> <span class="yellow">{</span> <br>
+    <span class="gray">// code to executed</span> <br>
+    <span class="yellow">}</span>
+  </div>
+
+  <p>In this case we are going to create a function to add two numbers and we are going to invoke it from JavaScript:
+  </p>
+
+  <p><b><em>Example:</em></b></p>
+  <div id="output"></div>
+
+  <script>
+
+    // Function
+    function sum(n1, n2) {
+      return n1 + n2;
+    }
+
+    // Output
+    document.getElementById("output").innerHTML = sum(4, 3);
+
+  </script>
+</body>
+
+</html>

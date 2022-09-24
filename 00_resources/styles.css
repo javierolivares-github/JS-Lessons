@@ -1,0 +1,75 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  padding: 3rem;
+}
+
+.eg {
+  font-weight: 700;
+}
+
+.example {
+  background-color: #111111;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+code {
+  background-color: turquoise;
+  font-weight: 700;
+}
+
+.warning {
+  background-color: lightcoral;
+}
+
+.purple,
+.function,
+.class {
+  color: #9b59b6;
+}
+
+.blue,
+.function_name {
+  color: #3498db;
+}
+
+.yellow,
+.brackets,
+.c_brackets {
+  color: #f1c40f;
+}
+
+.gray {
+  color: #95a5a6;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #111111;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: aquamarine;
+}

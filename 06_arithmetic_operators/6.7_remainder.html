@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Arithmetic Operators - Remainder</title>
+</head>
+
+<body>
+
+  <h2>JS Arithmetic Operators - <br> <code>Remainder</code>:</h2>
+
+  <table>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Remainder</td>
+    </tr>
+  </table>
+
+  <p class="eg">Example:</p>
+
+  <p>Let's create a program to get the remainder of two numbers.</p>
+
+  <div id="output"></div>
+
+  <script>
+
+    let a = 6;
+    let b = 3;
+    let c = 5;
+    let result1 = a % b;
+    let result2 = a % c;
+    document.getElementById("output").innerHTML = `
+    a = ${a} <br>
+    b = ${b} <br>
+    b = ${c} <br>
+    a % b = ${result1} <br>
+    a % c = ${result2}
+    `;
+
+  </script>
+</body>
+
+</html>
