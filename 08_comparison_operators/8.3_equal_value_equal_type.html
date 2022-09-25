@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Comparison Operators - Equal value equal type</title>
+</head>
+
+<body>
+
+  <h2>JS Comparison Operators | <br><code>Equal value and equal type ===</code>:</h2>
+
+  <table>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>===</td>
+      <td>Equal value and equal type</td>
+    </tr>
+  </table>
+
+  <p class="eg">Example:</p>
+
+  <div id="output"></div>
+
+  <script>
+
+    // Equal to
+    let a = 14;
+    document.getElementById("output").innerHTML =
+      `
+      <p>If a = 14,</p>
+      <p>The result of (a === 14) is: ${a === 14}</p>
+      <p>The result of (a === "14") is: ${a === "14"}<p/>
+      <p>The result of (a === 6) is: ${a === 6}<p/>
+    `;
+
+  </script>
+</body>
+
+</html>
