@@ -5,28 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
   <title>JS Logical Operators - and</title>
-  <style>
-    code {
-      background-color: turquoise;
-    }
-  </style>
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif;">
+<body>
 
-  <h2>JS Logical Operators | <code>and (&&)</code>:</h2>
+  <h2>JS Logical Operators | <br><code>The AND(&&) operator</code>:</h2>
+
+  <table>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>&&</td>
+      <td>AND</td>
+    </tr>
+  </table>
+
+  <ul>
+    <li>The AND operator return true if two or more expressions are true, otherwise it returns false.</li>
+  </ul>
+
+  <p class="eg">Example:</p>
+
   <div id="output"></div>
 
   <script>
 
-    // Logical operators - and
-    let a = 10;
-    let b = 8;
+    let a = 76;
 
     document.getElementById("output").innerHTML =
-      (a > 8 && b < 13) + "<br>" +
-      (a > 8 && b >= 20);
+      `
+      Try to guess what is the value of "a". <br>
+      Hint: "a" is between 1 and 100. <br>
+      <br>
+      (a > 50 && a < 100) = ${(a > 50 && a < 100)} <br>
+      (a > 50 && a < 75) = ${(a > 50 && a < 75)} <br>
+      ...
+    `;
 
   </script>
 </body>

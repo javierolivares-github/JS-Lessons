@@ -5,28 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS Logical Operators - not</title>
-  <style>
-    code {
-      background-color: turquoise;
-    }
-  </style>
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Logical Operators - NOT</title>
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif;">
+<body>
 
-  <h2>JS Logical Operators | <code>not (!)</code>:</h2>
+  <h2>JS Logical Operators | <br><code>The NOT(!) operator</code>:</h2>
+
+  <table>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>NOT</td>
+    </tr>
+  </table>
+
+  <ul>
+    <li>The NOT operator return true for false statements and false for true statements.</li>
+  </ul>
+
+  <p class="eg">Example:</p>
+
   <div id="output"></div>
 
   <script>
 
-    // Logical operators - not
     let a = 10;
-    let b = 8;
+    let b = 4;
 
     document.getElementById("output").innerHTML =
-      !(a < 1) + "<br>" +
-      !(a > b);
+      `
+      a = 10 <br> 
+      b = 4 <br>
+      !(a === b) = ${!(a === b)} <br>
+      !(a > b) = ${!(a > b)}
+    `;
 
   </script>
 </body>

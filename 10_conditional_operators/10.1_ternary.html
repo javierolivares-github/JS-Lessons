@@ -5,37 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
   <title>JS Conditional Operators - Ternary</title>
-  <style>
-    code {
-      background-color: turquoise;
-    }
-  </style>
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif;">
+<body>
 
-  <h2>JS Conditional Operators | <code>ternary operator(?)</code>:</h2>
+  <h2>JS Conditional Operators | <br><code>ternary operator(?)</code>:</h2>
   <p>
     The ternary operator accepts three values: a condition, an expression to execute if the condition is true, and an
     expression to execute if the condition is false.
   </p>
 
+  <table>
+    <tr>
+      <th>Syntax</th>
+    </tr>
+    <tr>
+      <td><em>variablename = (condition) ? value1 : value2</em></td>
+    </tr>
+  </table>
+
   <p><b><em>Example:</em></b></p>
 
-  <p>Please verify your age:</p>
-  <input type="number" name="age" id="age" value="17">
-  <button onclick="verifyAge()">Submit</button>
+  <p>If the condition is true, it returns the string "You can drink". If it is false it returns the string "You
+    can't drink"</p>
+
   <p id="output"></p>
 
   <script>
+    // Process
+    let age = 16;
+    let canDrink = (age > 21) ? "You can drink. &#10004;&#127866;" : "You can't drink. &#10060;&#127866;";
 
-    function verifyAge() {
-      let age = document.getElementById("age").value;
-      let verify = (age >= 18) ? "You are allowed" : "You are not allowed";
-      document.getElementById("output").innerHTML =
-        `${verify} to view the content of this page.`;
-    }
+    // Output
+    document.getElementById("output").innerHTML =
+      `
+      <p><b>Your age is: ${age}</b></p>
+      <p><b>${canDrink}</b></p>
+    `;
+
 
   </script>
 </body>
