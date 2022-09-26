@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>Operadores Aritméticos 9</title>
+</head>
+
+<body>
+  <h2>JS Operadores Aritméticos | <br> Ejercicio 9:</h2>
+
+  <p>Crea una variable llamada "a". Asígnale el valor de 100 + 50 * 3. Crea una variable llamada "b". Asígnale el valor
+    de (100 + 50) * 3. Crea una variable llamada "c". Asígnale el valor de 100 + 50 - 3. Muestra los resultados en
+    pantalla.</p>
+
+  <p class="eg">Resultado:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let a = 100 + 50 * 3;
+    let b = (100 + 50) * 3;
+    let c = 100 + 50 - 3;
+    document.getElementById("salida").innerHTML = `
+      a = ${a} <br>
+      b = ${b} <br>
+      c = ${c}
+    `;
+
+  </script>
+</body>
+
+</html>
