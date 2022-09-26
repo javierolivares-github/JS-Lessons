@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>Tipos de Datos 2</title>
+</head>
+
+<body>
+  <h2>JS Tipos de Datos | <br> Ejercicio 2:</h2>
+
+  <p>Crea una variable llamada "precio1". Crea una variable llamada "precio2". Crea una variable llamada "precio3".
+    Asigna el valor 99.00 a la variable 1. Asigna el valor de 70 a la variable 2. Asigna el valor de 62.99 a la variable
+    3. Muestra los valores en pantalla. Muestra los tipos de datos en pantalla.</p>
+
+  <p class="eg">Resultado:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let precio1;
+    let precio2;
+    let precio3;
+    precio1 = 99.00;
+    precio2 = 70;
+    precio3 = 62.99;
+    document.getElementById("salida").innerHTML = `
+      precio1 = ${precio1}<br>
+      precio2 = ${precio2}<br>
+      precio3 = ${precio3}<br>
+      Tipo de dato precio1 = ${typeof precio1}<br>
+      Tipo de dato precio2 = ${typeof precio2}<br>
+      Tipo de dato precio3 = ${typeof precio3}
+    `;
+
+  </script>
+</body>
+
+</html>

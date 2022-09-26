@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>Tipos de Datos 3</title>
+</head>
+
+<body>
+  <h2>JS Tipos de Datos | <br> Ejercicio 3:</h2>
+
+  <p>Crea una variable llamada "distanciaMarte". Crea una variable llamada "tamañoAtomo". Asigna el valor de 58000000 en
+    notación científica a la variable 1. Asigna el valor de -0.00000001 en notación científica a la variable 2. Muestra
+    los valores en pantalla. Muestra los tipos de datos en pantalla.</p>
+
+  <p class="eg">Resultado:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let distanciaMarte;
+    let tamañoAtomo;
+    distanciaMarte = 58e6;
+    tamañoAtomo = 1e-8;
+    document.getElementById("salida").innerHTML = `
+      Distancia a Marte = ${distanciaMarte} km <br>
+      Tamaño de un Átomo = ${tamañoAtomo} cm <br>
+      Tipo de dato distanciaMarte = ${typeof distanciaMarte} <br>
+      Tipo de dato tamañoAtomo = ${typeof tamañoAtomo}
+    `;
+
+
+  </script>
+</body>
+
+</html>

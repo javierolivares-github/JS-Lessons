@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>Tipos de Datos</title>
+</head>
+
+<body>
+  <h2>JS Tipos de Datos | <br> Ejercicio 1:</h2>
+
+  <p>Crea una variable llamada "marcaAuto1". Crea una variable llamada "marcaAuto2". Asigna la cadena "Land Rover" a
+    la variable 1. Asigna la cadena 'Audi' a la variable 2. Muestra el valor de las variables en pantalla. Muestra
+    el tipo de las variables en pantalla.</p>
+
+  <p class="eg">Resultado:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let marcaAuto1;
+    let marcaAuto2;
+    marcaAuto1 = "Land Rover";
+    marcaAuto2 = 'Audi';
+    document.getElementById("salida").innerHTML = `
+      marcaAuto1 = ${marcaAuto1} <br>
+      marcaAuto2 = ${marcaAuto2} <br>
+      Tipo de dato marcaAuto1 = ${typeof marcaAuto1} <br>
+      Tipo de dato marcaAuto2 = ${typeof marcaAuto2}
+    `;
+
+  </script>
+</body>
+
+</html>
