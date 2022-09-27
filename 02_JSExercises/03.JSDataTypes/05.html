@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Tipo de Datos - Arreglos</title>
+</head>
+
+<body>
+
+  <h2>JS Tipo de Datos |<br> Ejercicio 5 - Arreglos:</h2>
+  <p>
+    Crea una constante llamada "frutas". Asígnale un arreglo que contenga los siguientes valores: "Manzana", "Banana" y
+    "Mango". Muestra los resultados en pantalla. Muestra el tipo de dato de la variable "frutas".
+  </p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    const frutas = ["Manzana", "Banana", "Mango"];
+
+    document.getElementById("salida").innerHTML = `
+     $1.02 - ${frutas[0]} &#127822;<br>
+     $0.23 - ${frutas[1]} &#127820;<br>
+     $0.98 - ${frutas[2]} &#129389;<br>
+     Tipo de dato "frutas" = ${typeof frutas} <br>
+     ¿"frutas" es un Arreglo? = ${Array.isArray(frutas)}
+    `;
+
+
+
+  </script>
+</body>
+
+</html>

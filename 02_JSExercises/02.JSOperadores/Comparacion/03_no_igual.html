@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Operadores de Comparación - No Igual</title>
+</head>
+
+<body>
+
+  <h2>JS Operadores de Comparación | <br> Ejercicio 3 - No igual <code>!=</code>:</h2>
+  <p>
+    Crea una variable llamada "numero1". Asígnale el valor de 3. Determina el resultado de (numero1 != 3), (numero1 !=
+    "3") y (numero1 != 2). Muestra los resultados en pantalla.
+  </p>
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let numero1 = 3;
+
+    document.getElementById("salida").innerHTML = `
+      Si numero1 = 3, <br>
+      El resultado de (numero1 != 3) es: ${numero1 != 3}<br>
+      El resultado de (numero1 != "3") es: ${numero1 != "3"}<br>
+      El resultado de (numero1 != 2) es: ${numero1 != 2}
+    `;
+
+
+  </script>
+</body>
+
+</html>

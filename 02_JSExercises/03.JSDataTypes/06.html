@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Tipos de Datos - Objetos</title>
+</head>
+
+<body>
+  <h2>JS Tipo de Datos |<br> Ejercicio 6 - Objetos:</h2>
+  <p>
+    Crea una constante llamada "manzana". Asígnale un valor objeto que contenga las siguiente propiedades: tipo:
+    "Manzana Roja", emoji: "&#127822;", puntaje: 3.1, reseñas: 359, precio: 1.02, cantidad: 998. Muestra los resultados
+    en pantalla. Muestra el tipo de dato de la variable.
+  </p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+    const manzana = {
+      tipo: "Manzana Roja",
+      emoji: "&#127822",
+      puntaje: 3.1,
+      reseñas: 359,
+      precio: 1.02,
+      cantidad: 998
+    }
+
+    document.getElementById("salida").innerHTML = `
+      <div>
+        <h3>${manzana.tipo} ${manzana.emoji}</h3>
+        Reseñas: ${manzana.reseñas}<br>
+        Puntaje: ${manzana.puntaje} / 5<br> 
+        Precio: $ ${manzana.precio}<br>
+        Cantidad: ${manzana.cantidad} un.  
+      </div>
+      <br>
+      Tipo de dato de "manzana" = ${typeof manzana}
+    `;
+
+  </script>
+</body>
+
+</html>

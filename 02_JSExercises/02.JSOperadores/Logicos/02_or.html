@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Operadores Lógicos - or</title>
+</head>
+
+<body>
+
+  <h2>JS Operadores Lógicos | <br> Ejercicio 2 - or <code>||</code>:</h2>
+
+  <p>Si num1 = 6 y num2 = 3. Obtén el resultado de las siguientes operaciones:</p>
+  <p>(num1 == 5 || num2 == 5), <br> (num1 == 6 || num2 == 0), <br> (num1 == 0 || num2 == 3), <br> (num1 == 6 || num2 ==
+    3)
+  </p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let num1 = 6;
+    let num2 = 3;
+    document.getElementById("salida").innerHTML = `
+    ${(num1 == 5 || num2 == 5)} <br>
+    ${(num1 == 6 || num2 == 0)} <br>
+    ${(num1 == 0 || num2 == 3)} <br>
+    ${(num1 == 6 || num2 == 3)}
+    `;
+
+  </script>
+</body>
+
+</html>

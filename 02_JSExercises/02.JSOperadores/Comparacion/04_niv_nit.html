@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Operadores de Comparación - No igual valor y no igual tipo</title>
+</head>
+
+<body>
+
+  <h2>JS Operadores de Comparación | <br> Ejercicio 4 - No igual valor y no igual tipo <code>!==</code>:</h2>
+
+  <p>
+    Crea una variable llamada "numero1". Asígnale el valor de 9. Determina el resultado de (numero1 !== 9), (numero1
+    !== "9") y (numero1 !== 4). Muestra los resultados en pantalla.
+  </p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let numero1 = 9;
+
+    document.getElementById("salida").innerHTML = `
+      Si numero1 = ${numero1}, <br>
+      El resultado de (numero1 !== 9) es: ${numero1 !== 9}<br>
+      El resultado de (numero1 !== "9") es: ${numero1 !== "9"}<br>
+      El resultado de (numero1 !== 4) es: ${numero1 !== 4}
+    `;
+
+
+  </script>
+</body>
+
+</html>

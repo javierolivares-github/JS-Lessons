@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Tipos de datos - Booleanos</title>
+</head>
+
+<body>
+
+  <h2>JS Tipos de Datos |<br> Ejercicio 4 - Booleanos:</h2>
+  <p>
+    Crea una variable llamada "a". Asígnale el valor de 4. Crea una variable llamada "b". Asígnale el valor de 5. Crea
+    una una variable llamada "comparación1". Asígnale el valor de a &gt; b. Crea una variable llamada "comparación2".
+    Asígnale el valor de a &lt; b. Muestra los resultados en pantalla. Muestra los tipos de datos de las variables.
+  </p>
+
+  <p><b><em>Example:</em></b></p>
+  <div id="output"></div>
+
+  <script>
+
+    let a = 4;
+    let b = 5;
+    let comparacion1 = (a > b);
+    let comparacion2 = (a < b);
+
+    document.getElementById("output").innerHTML = `
+      a &gt; b = ${comparacion1} <br>
+      a &lt; b = ${comparacion2} <br>
+      Tipo de dato a = ${typeof a} <br>
+      Tipo de dato b = ${typeof b} <br>
+      Tipo de dato comparacion1 = ${typeof comparacion1} <br>
+      Tipo de dato comparacion2 = ${typeof comparacion2}  
+    `;
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Operadores Lógicos - not</title>
+</head>
+
+<body>
+
+  <h2>JS Operadores Lógicos | <br> Ejercicio 3 - not <code>!</code>:</h2>
+
+  <p>Si num1 = 7 y num2 = 10. Obtén el resultado de las siguientes operaciones:</p>
+  <p>!(num1 === num2), <br> !(num1 &gt; num2)</p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let num1 = 7;
+    let num2 = 2;
+    document.getElementById("salida").innerHTML = `
+    ${!(num1 === num2)} <br>
+    ${!(num1 > num2)}
+    `;
+
+  </script>
+</body>
+
+</html>

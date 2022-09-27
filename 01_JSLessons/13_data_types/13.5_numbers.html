@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Data Types - Numbers</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Data Types |<br> <code>Numbers</code>:</h2>
+
+  <ul>
+    <li>JavaScript has only one type of numbers.</li>
+    <li>Numbers can be written with, or without decimals.</li>
+    <li>Extra large or extra small numbers can be written with scientific notation.</li>
+  </ul>
+
+  <p class="eg">Example:</p>
+  <div id="output"></div>
+
+  <script>
+
+    let price1 = 34.00;
+    let price2 = 34;
+    let price3 = 3.14;
+    let distanceToMars = 58e6;
+    let atomSize = 1e-8;
+
+    document.getElementById("output").innerHTML = `
+    price1 = ${price1}<br>
+    price2 = ${price2}<br>
+    price3 = ${price3}<br>
+    distanceToMars = ${distanceToMars} km. <br>
+    atomSize = ${atomSize}
+    `;
+
+
+  </script>
+</body>
+
+</html>

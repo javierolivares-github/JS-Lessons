@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Operadores Condicionales - nullish</title>
+</head>
+
+<body>
+
+  <h2>JS Operadores Condicionales | <br> operador nullish <code>??</code>:</h2>
+
+  <p>
+    El operador nullish ?? devuelve el primer argumento si la condición es nula o indefinida. De lo contrario devuelve
+    el segundo.
+  </p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let nombreUsuario = null;
+    let mensajeError = "&#10060; Error. Ingrese un nombre valido.";
+    let resultado = nombreUsuario ?? mensajeError;
+    document.getElementById("salida").innerHTML = `
+    Bienvenido(a) al curso ${resultado}
+    `;
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Operadores Lógicos - and</title>
+</head>
+
+<body>
+
+  <h2>JS Operadores Lógicos | <br> Ejercicio 1 - and <code>&&</code>:</h2>
+
+  <p>Si num1 = 20 y num2 = 50. Obtén el resultado de las siguientes operaciones:</p>
+  <p>(num1 &lt; 30 && num2 === 50) <br> (num1 &lt; 30 && num2 &gt; 100)</p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let num1 = 20;
+    let num2 = 50;
+    document.getElementById("salida").innerHTML = `
+    ${(num1 < 30 && num2 === 50)} <br>
+    ${(num1 < 30 && num2 > 100)}
+    `;
+
+
+  </script>
+</body>
+
+</html>

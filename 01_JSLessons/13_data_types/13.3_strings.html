@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Data Types - Strings</title>
+</head>
+
+<body>
+
+  <h2>JS Data Types |<br> <code>Strings</code>:</h2>
+
+  <ul>
+    <li>A string is a series of characters written inside quotes.</li>
+    <li>You can use single or double quotes.</li>
+    <li>You can use quotes inside a string, as long as they don't match the quotes surrounding the string</li>
+  </ul>
+
+  <p class="eg">Example:</p>
+  <div id="output"></div>
+
+  <script>
+
+    let book1 = "Dune";
+    let book2 = 'Dune';
+    let book3 = "Dune by 'Frank Herbert'";
+    let book4 = 'Dune by "Frank Herbert"';
+
+    document.getElementById("output").innerHTML = `
+    ${book1} <br>
+    ${book2} <br>
+    ${book3} <br>
+    ${book4}
+    `;
+
+  </script>
+</body>
+
+</html>

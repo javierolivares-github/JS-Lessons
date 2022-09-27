@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/00_resources/styles.css">
+  <title>JS Tipo de Datos - Undefined</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <h2>JS Tipo de Datos | <br> Ejercicio 7 - Undefined</h2>
+  <p>
+    Crea una variable llamada "marcaAuto". No le asignes valor. Muestra el resultado en pantalla. Muestra el tipo de
+    dato en pantalla.
+  </p>
+
+  <p class="eg">Ejemplo:</p>
+  <div id="salida"></div>
+
+  <script>
+
+    let marcaAuto;
+
+    document.getElementById("salida").innerHTML = `
+      Marca de Automovil = ${marcaAuto} <br>
+      Tipo de dato de "marcaAuto" = ${typeof marcaAuto} 
+    `;
+
+  </script>
+</body>
+
+</html>
